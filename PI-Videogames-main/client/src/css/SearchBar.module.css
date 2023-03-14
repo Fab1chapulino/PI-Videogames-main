@@ -1,0 +1,39 @@
+.Searching{
+ width:100vw;
+ height:40vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ flex-direction:column;
+}
+.goHome{
+  color:#2D2A32;
+  background-color:#EAE151;
+  border-radius:10px;
+  padding:1vh 2vh 1vh 2vh;
+  font-size:2.5vh;
+  display:inline-block;
+}
+.goHome:hover{
+ text-decoration:underline;
+}
+.goHome:active{
+ background-color:#DDD92A;
+ animation-name:change-size;
+ animation-duration:0.5s;
+}
+@keyframes change-size{
+ 0%{font-size:2.5vh;}
+ 50% {font-size:2.3vh;}
+ 100% {font-size:2.5vh;}
+}
+.goHomeContainer{
+ padding-top:5vh;
+ margin:0;
+ width:64vw;
+}
+.SearchBar{
+ background-color:#FAFDF6;
+ border-radius:10px;
+ border:solid #2D2A32;
+}

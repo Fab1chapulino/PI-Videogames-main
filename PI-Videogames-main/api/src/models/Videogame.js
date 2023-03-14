@@ -4,9 +4,62 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('videogame', {
+    id:{
+  type: DataTypes.UUID,
+  defaultValue: DataTypes.UUIDV4, // Or DataTypes.UUIDV1
+//  unique:true,
+  primaryKey:true
+   },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique:true
     },
-  });
+   description:{
+     type:DataTypes.STRING(3500),
+     allowNull:false
+   },
+   platforms:{
+     type:DataTypes.ARRAY(DataTypes.STRING),
+     allowNull:false
+   },
+  image:{
+    type:DataTypes.STRING,
+    allowNull:false
+  },
+  release_date:{
+    type:DataTypes.STRING,
+    allowNull:false
+  },
+  rating:{
+    type:DataTypes.FLOAT,
+    allowNull:false,
+    validate:{
+	max:5,
+	min:0
+	}
+  	}
+    },{
+	timestamps:false
+	}
+ )
 };
+
+
+/*
+MODELO 1 | Videogames
+
+ID (deben ser distintos a los que vienen de la API). *
+Nombre. *
+Descripción. *
+Plataformas. *
+Imagen. *
+Fecha de lanzamiento. *
+Rating. *
+
+📍 MODELO 2 | Genres
+
+ID. *
+Nombre. *
+
+*/

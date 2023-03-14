@@ -1,0 +1,46 @@
+.Options{
+ display:flex;
+ justify-content:center;
+ font-family:serif;
+ color:#2D2A32;
+ margin-top:2vh;
+ margin-bottom:3vh;
+}
+.Filters{
+ font-family:serif;
+ padding:0 2.5vh;
+}
+.setFilter{
+ display:flex;
+}
+.Origin{
+ margin:0 1vh 0 0;
+}
+.Genre{
+ margin:0 0 0 1vh;
+}
+.Order{
+ padding:0 2.5vh;
+}
+.setOrder{
+ display:flex;
+}
+.By{
+ margin:0 1vh 0 0;
+}
+.Mode{
+ margin:0 0 0 1vh;
+}
+.Title{
+ border:solid #2D2A32;
+ border-radius:10px;
+ text-align:center;
+}
+.subTitle{
+ margin:0;
+}
+.Select{
+ border:solid #2D2A32;
+ border-radius:10px;
+ background-color:#FAFDF6;
+}

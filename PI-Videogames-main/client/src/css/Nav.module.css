@@ -1,0 +1,23 @@
+.Bar{
+ background-color:#2D2A32;
+ width:100vw;
+ padding:0;
+ display:flex;
+ position:fixed;
+ top:0;
+ z-index:2;
+}
+.Navigate{
+ text-decoration:none;
+ color:#FAFDF6;
+ padding:2vh 1.8vh 2vh 1.5vh;
+ border-right:solid #FAFDF6;
+ font-family:serif;
+}
+.Navigate:hover{
+ color:#EAE151;
+}
+.Navigate:active{
+ background-color:#FAFDF6;
+ color:#2D2A32;
+}

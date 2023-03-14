@@ -1,0 +1,8 @@
+.Cards{
+ display:flex;
+ justify-content:space-evenly;
+ flex-wrap:wrap;
+ height:auto;
+ width:100vw;
+ border:1px solid rgba(0, 0, 0, 0.3);
+}

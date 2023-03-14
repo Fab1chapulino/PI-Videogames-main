@@ -1,0 +1,57 @@
+.Landing{
+  height:100vh;
+  width:100vw;
+  text-align: center;
+  font-family:serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image:url(https://i.pinimg.com/736x/fa/45/9a/fa459aec413f5128b4084b58bbf5f874.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+.Contain{
+ background:#2D2A32;
+ dispaly:inline;
+}
+.Welcome{
+  color:#FAFDF6;
+  font-size:6vh;
+  text-shadow:0.05em 0.05em 0em #EEEFA8;
+}
+.Invitation{
+  font-size:2vh;
+  color:#FAFDF6;
+  padding:1vh;
+  margin:3vh;
+  text-shadow:0.05em 0.05em 0.5em #EEEFA8;
+}
+.goHome{
+  outline:none;
+  text-decoration:none;
+  color:#2D2A32;
+  background-color:#EAE151;
+  padding:1vh 2vh 1vh 2vh;
+  border-radius:10px;
+  font-size:2.5vh;
+}
+.goHome:visited{
+ color:#2D2A32;
+}
+.goHome:focus{
+ background-color:#FAFDF6;
+}
+.goHome:hover{
+  text-decoration:underline;
+}
+.goHome:active{
+ background-color:#FAFDF6;
+ animation-name:change-size;
+ animation-duration:0.2s;
+}
+@keyframes change-size{
+ 0%{font-size:2.5vh;}
+ 50% {font-size:2vh;}
+ 100% {font-size:2.5vh;}
+}
